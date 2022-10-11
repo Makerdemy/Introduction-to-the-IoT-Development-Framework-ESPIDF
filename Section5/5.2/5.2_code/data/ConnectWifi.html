@@ -1,0 +1,33 @@
+<html>
+<body>
+<form id="form1">
+<input id="ssid" value="" />
+<input id="password" value="" />
+<input type="submit" />
+</form>
+</body>
+<script>
+window.onload = function () {
+frm = document.getElementById("form1")
+frm.onsubmit = function (e) {
+e.preventDefault();
+ssid = document.getElementById("ssid")
+password = document.getElementById("password")
+frmData = {}
+frmData["ssid"] = ssid.value
+frmData["password"] = password.value
+frmDataJson = JSON.stringify(frmData)
+console.log(frmDataJson)
+fetch("/uri", {
+method: 'POST',
+cache: 'no-cache',
+referrerPolicy: 'no-referrer',
+body: frmDataJson,
+headers: {}
+}).then(data => alert(data.text())).catch(err => {
+console.debug("Error in fetch", err);
+});
+};
+}
+</script>
+</html>
