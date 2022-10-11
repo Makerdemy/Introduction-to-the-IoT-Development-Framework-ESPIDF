@@ -1,0 +1,16 @@
+Installation process Link :
+
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#introduction
+
+Eclipse plugin installation process link :
+
+https://github.com/espressif/idf-eclipse-plugin/blob/master/README.md
+
+VS code installation link : 
+
+https://code.visualstudio.com/download
+
+Python 3 installation link :
+
+https://www.python.org/downloads/
+

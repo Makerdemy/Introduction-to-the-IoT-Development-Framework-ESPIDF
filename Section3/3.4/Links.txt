@@ -1,0 +1,3 @@
+IDF path setup process link :
+
+https://docs.espressif.com/projects/esp-idf/en/v3.3/get-started-cmake/add-idf_path-to-profile.html
